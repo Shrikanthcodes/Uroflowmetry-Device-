@@ -1,0 +1,218 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'lato','Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+row {
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+
+header {
+    background-image: url(img/i1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+     
+}
+
+.specialbox {
+    position: absolute; 
+    color: crimson;
+    width: 1140px;
+    top: 12%;
+    left: 12%;
+    /*transform: translate(-30%,-15%);*/
+}
+.Heyboi {
+    position: absolute;
+    top: 74%;
+    left: 60%;    
+    
+}
+.bro {
+    position: absolute;
+    color: white;
+    top: 93%;
+    left: 37%;    
+}
+.cult {
+    position: absolute;
+    top: 54%;
+    left: 60%;    
+}
+.nokey {
+    position: absolute;
+    top: 44%;
+    left: 60%;
+    
+}
+.lowkey {
+    position: absolute;
+    top: 64%;
+    left: 60%;    
+}
+.Buttons {
+    position: absolute;
+    top: 1%;
+    left: 65%;
+}
+    
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: black;
+    border: 1px solid black;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid black;
+    color: black;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: white;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid gray;
+    
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
+}
+}
+.medo {
+    position: absolute;
+    top: 45%;
+    left: 22%;    
+}
+
+.medi {
+    position: absolute;
+    top: 26%;
+    left: 18%;    
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    font-size: 300%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    
+}
+
+h3,h4 {
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 40px;
+    word-spacing: 2px;
+    font-weight: 0;
+    
+}
+
+h4 {
+   margin-top: 50px; 
+}
+h8 {
+   margin-top: 50px;
+    color: black;
+    margin-left: 10px;
+    font-size: 180%;
+    font-weight: 200;
+    text-align: center;
+}
+
+h5 {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 120%;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+h6 {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 120%;
+    margin-bottom: 25px;        , .loonger, .longer, .c15, .c25, .c35, .c45, .c55, .long-copy
+}
+
+.lo-copy {
+    margin-left: 20px;
+}
+
+.loonger {
+    margin-left: 20px;
+}
+.longer {
+    margin-left: 20px;
+}
+.c15 {
+    margin-left: 20px;
+}
+.c25 {
+    margin-left: 20px;
+}
+.c35 {
+    margin-left: 20px;
+}
+.c45 {
+    margin-left: 20px;
+}
+.long-copy {
+    margin-left: 20px;
+}
+.lo-copy {
+    margin-left: 20px;
+}
+.lo-copy {
+    margin-left: 20px;
+}
+
+.noel {
+    padding: 80px 0;
+    background-color: aliceblue;
+    background-size: cover;
+}
+
+.liam {
+    padding: 80px 0;
+    background-color:aquamarine;
+    background-size: cover;
+
+    
+

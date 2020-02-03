@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/CSS/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type='text/css'>
+        <title>Uroflowmetry</title>
+
+
+    </head>
+    <body>
+        <header>
+            <div class="specialbox">
+                <h1> UROFLOMETRY </h1>
+            </div>
+            <div class="nokey">
+                <h8> User Type:</h8>
+            </div>
+             <div class="lowkey">
+                <h8> Login :</h8>
+            </div>
+            <div class="bro">
+                <h7> Please scroll down to view additional info. </h7>
+            </div>
+           <!-- <div class="butt">
+                <form name="loggin">
+                    Number&nbsp;&nbsp;&nbsp;&nbsp; :<input type="text" name="un"/><br>
+                    Password :<input type="password" name="pw"/><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <input type="submit" onclick="validate(this.form)" value="Submit"/>&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <input type="reset" value="Cancel"/>
+                </form>
+            </div>-->
+         <script type = "text/javascript">
+// Note: Like all Javascript password scripts, this is hopelessly insecure as the user can see 
+//the valid usernames/passwords and the redirect url simply with View Source.  
+// And the user can obtain another three tries simply by refreshing the page.  
+//So do not use for anything serious!
+var count = 2;
+function message()
+             {
+                 alert("Please sign in to view the live graph");
+             }
+function validate() {
+var un = document.myform.username.value;
+var pw = document.myform.pword.value;
+var valid = false;
+var unArray = ["username1", "username2", "username3", "username4"];  // as many as you like - no comma after final entry
+var pwArray = ["password1", "password2", "password3", "password4"];  // the corresponding passwords;
+for (var i=0; i <unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+if (valid) {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "https://console.thinger.io/#/dashboard/uro?authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJEYXNoYm9hcmRfdXJvIiwidXNyIjoiQ2hpa2FoYWNrcyJ9.HhdrrYS4UdycQSL9N2kor2OFfhX35yWpOl8D7xjahnw");
+return false;
+}
+var t = " tries";
+if (count == 1) {t = " try"}
+if (count >= 1) {
+alert ("Invalid username and/or password.  You have " + count + t + " left.");
+document.myform.username.value = "";
+document.myform.pword.value = "";
+setTimeout("document.myform.username.focus()", 25);
+setTimeout("document.myform.username.select()", 25);
+count --;
+}
+else {
+alert ("Still incorrect! You have no more tries left!");
+document.myform.username.value = "No more tries allowed!";
+document.myform.pword.value = "";
+document.myform.username.disabled = true;
+document.myform.pword.disabled = true;
+return false;
+}
+}
+</script>
+   <div class="Heyboi">
+<form name = "myform">
+<p>ENTER USER NAME <input type="text" name="username"><br> ENTER PASSWORD <input type="password" name="pword"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="Check In" name="Submit" onclick= "validate()">
+</p>
+</form>
+            </div>
+            <div class="cult">
+                <form>
+  <input type="radio" name="Type" value="doctor" checked> Doctor &nbsp; &nbsp; 
+  <input type="radio" name="Type" value="patient"> Patient &nbsp; &nbsp; 
+  <input type="radio" name="Type" value="visitor"> Visitor &nbsp; &nbsp; 
+</form>
+                
+            </div>
+            <div class="Buttons">
+                <a class="btn btn-full" onclick= "message()" > Lead to Graph</a>&nbsp;&nbsp;
+                <a class="btn btn-ghost" href="#"> Register </a>
+            </div>
+           <!-- <div class="medo">
+                <!--<picture>
+                    <source media="(min-width: 200px)" srcset="resources/CSS/img/medindia.jpg">
+                    <source media="(min-width: 250px)" srcset="resources/CSS/img/medindia.jpg">
+                    <img src="resources/CSS/img/medindia.jpg" alt="Logo" height="150" width="200">
+
+            
+                </picture>
+                <img src="resources/CSS/img/medindia.jpg" alt="logo" height="150" width="200">
+                
+            </div> -->
+            <div class="medi">
+               
+                <img src="resources/CSS/img/medindia.jpg" alt="logo" height="150" width="200">
+                
+            </div>
+           
+        </header>
+        <section class= "noel">
+             <div class="row">
+                 <h3> What is uroflowmetry? </h3>
+                 <p class="long-copy">
+                     Doctors use uroflowmetry to test the amount of urine voided during urination. It also measures the speed of urination. The test is called a uroflow test.<br>It can help your doctor identify the causes of certain urinary difficulties.
+                 </p>
+            
+            
+                 <h4> Causes </h4>
+                 <p class="longer">
+                     Your doctor may recommend a uroflow test if you have slow urination, a weak urine stream, or difficulty urinating. They may also use it to test your sphincter muscle. The sphincter muscle is a circular muscle that closes tightly around the bladder opening. It helps to prevent urine leakage.<br>
+
+Results from the test can help your doctor determine how well your bladder and sphincter are functioning. The test can also be used to test for obstructions in the normal flow of urine. By measuring the average and maximum rates of your urine flow, the test can estimate the severity of any blockage or obstruction. It can also help identify other urinary problems, such as a weakened bladder or an enlarged prostate.
+                 </p>
+                 <h4> Condition that affect urineflow</h4>
+            </div>
+            <div class="row">
+                <div class="c15">
+                    <h5>1) Benign Prostatic Hypertrophy. (BPH) </h5>
+                    <p> Enlargement of the prostate is called benign prostatic hyperplasia (BPH). It occurs when the cells of the prostate gland begin to multiply. These additional cells cause your prostate gland to swell, which squeezes the urethra and limits the flow of urine. BPH is not the same as prostate cancer and doesn’t increase the risk of cancer. However, it can cause symptoms that can affect your quality of life.<br> BPH is common in men older than 50 years. Uroflowmetry lets urologists learn more about your BPH symptoms.<br></p>
+                </div>
+                 <div class="c25">
+                    <h5>2) Bladder Cancer. </h5>
+                    <p> Bladder cancer occurs in the tissues of the bladder, which is the organ in the body that holds urine. According to the National Institutes of Health, approximately 45,000 men and 17,000 women per year are diagnosed with the disease.<br></p>
+                </div>
+                <div class="c35">
+                    <h5>3) Prostate Cancer. </h5>
+                    <p> The prostate is a small gland found in a man’s lower abdomen. It’s located under the bladder and surrounding the urethra. The prostate is regulated by the hormone testosterone and produces seminal fluid, also known as semen. Semen is the substance containing sperm that exits the urethra during ejaculation.<br>
+
+When an abnormal, malignant growth of cells — which is called a tumor — forms in the prostate, it’s called prostate cancer. This cancer can spread to other areas of the body. In these cases, because the cancer is made of cells from the prostate, it’s still called prostate cancer.<br></p>
+                </div>
+                <div class="c45">
+                    <h5>4) Neurogenic Bladder dysfunction. </h5>
+                    <p> Your bladder relies on muscles to contract and release when you’re ready to urinate. Your brain typically regulates this process, but sometimes the message that you need to urinate isn’t sent from your brain to your bladder. This is a condition known as neurogenic bladder. Treatment for this condition can help you regain control<br></p>
+                </div>
+                
+                <div class="c55">
+                    <h5>5) A urinary blockage. </h5>
+                    <p> A physical blockage of resistance in the urinary bladder that may or may not pertain to any related infection. The urologist may be able to help the patient with necessary medication and treatment<br></p>
+                </div>
+            
+            </div>
+                
+        </section>
+        
+        <section class= "liam">
+             <div class="row">
+                 <h3> Procedure </h3>
+                 <p class="lo-copy">
+                    Unlike traditional urine tests in which you urinate into a cup, you’ll need to urinate into a funnel-shaped device or a special toilet for the uroflow test. It’s important that you don’t put any toilet tissue on or in the toilet or device.<br>
+
+It’s best to urinate as you normally would, without attempting to manipulate the speed or flow in any way. An electronic uroflowmeter hooked up to the funnel or toilet measures the speed and quantity of urination. You must not urinate until the machine is turned on.<br>
+
+The uroflowmeter calculates the amount of urine you pass, the flow rate in milliliters per second, and the length of time it takes to empty your bladder completely. It will record this information on a chart. During normal urination, your initial urine stream begins slowly, speeds up, and then finally slows down again. The uroflowmeter can record any differences from the norm to help your doctor make a diagnosis.<br>
+
+When you’re finished urinating, the machine will report your results. Your doctor will then discuss the findings with you. Depending on your specific case, you may need to perform the urine test on several consecutive days.
+                 </p>
+            
+            
+                 <h4> Understanding the results of your uroflow test </h4>
+                 <p class="loonger">
+                     Your doctor will use the results to determine your peak flow rate, or Qmax. Doctors generally use the peak flow rate, along with your voiding pattern and urine volumes, to determine the severity of any blockage or obstruction.<br>
+
+A decrease in urine flow may suggest you have weak bladder muscles or a blockage in the urethra.
+
+An increase in urine flow may suggest you have weakness in the muscles that help control the flow of urine. This may also be a sign of urinary incontinence.<br>
+
+After testing the flow of urine, your doctor will take your individual situation and symptoms into account before they develop a treatment plan. You may need additional urinary system testing. You should discuss the results of your test with your doctor. They can help you determine if treatment is necessary and what options you have if you do need treatment. Talk to your doctor if you’re experiencing any problems urinating. It could be the sign of a more serious health condition.
+
+
+
+                 </p>
+            </div>
+            
+        
+                
+        </section>
+        
+    </body>
+</html>

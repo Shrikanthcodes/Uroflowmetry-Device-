@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/CSS/Regstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet" type="text/css">
+        <title> Registration</title>
+</head>
+    
+    <body>
+  <header>  
+     <div class="totle">
+         Registration
+      </div>
+      
+<style>
+
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin-left: 1 ;
+    margin-right: 1
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+
+<h3>I hereby agree to the terms and conditions as mandated by the website, please sign me up.</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">Full Name &nbsp;&nbsp;:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+ 
+
+</header>
+</body>
+</html>

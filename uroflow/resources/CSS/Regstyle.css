@@ -1,0 +1,121 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+    color: #555;
+    font-family: 'lato','Montserrat','Arial', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+.Bala {
+    margin-left: 25%;
+    margin-top: 05%;
+}
+
+.Data {
+    margin-left: 10%;
+    margin-top: 06%;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 200;
+}
+
+h1{
+    font: Montserrat;
+    font-size: 20px;
+    color: white;
+
+}
+h2{
+    font: Montserrat;
+    font-size: 20px;
+    color: white;
+}
+
+.Butto {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+}
+.Variable{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+}
+    
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    font-size: 18px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: black;
+    border: 1px solid white;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-half:link,
+.btn-half:visited {
+    background-color: black;
+    border: 1px solid white;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: white;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+}
+
+.btn-half:hover,
+.btn-half:active {
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+}
+}
+/*header {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+     
+}*/
+
+/*.specialbox {
+    position: absolute; 
+    color: crimson;
+    width: 1140px;
+    top: 12%;
+    left: 12%;
+/*transform: translate(-30%,-15%);
+}*/
+

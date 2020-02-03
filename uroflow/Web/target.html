@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/CSS/targetstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet" type="text/css">
+        <title>Graph</title>
+</head>
+    <body>
+  <header>  
+     
+<script>
+window.onload = function () {
+
+var dps = []; // dataPoints
+var chart = new CanvasJS.Chart("chartContainer", {
+	title :{
+        text: "Urine Flow Rate"
+	},
+	axisY: {
+		includeZero: false
+	},      
+	data: [{
+		type: "spline",
+		dataPoints: dps
+	}]
+    
+});
+
+    
+
+var count=0;
+var xVal = 0;
+var yVal 
+
+
+var updateInterval = 1000;
+var dataLength = 20; // number of dataPoints visible at any point
+count++;
+chart.options.data[0].dataPoints.push({ y: 0});
+var updateChart = function () {
+
+	var request = new XMLHttpRequest();
+    
+	if(count<3){
+	 if(yVal>1)
+	{
+			dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++;
+        chart.options.data[0].dataPoints.push({ y: 1.4 - Math.random() * 0.8});
+	}
+	else
+	{
+		yVal= Math.random(0.1,1.2);
+		dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++;
+        //chart.options.data[0].dataPoints.push({ y: 1.4 - Math.random() * 0.8});
+	}	
+	}
+	else if(flag<11)
+	{
+			if(yVal<0.5)
+			{
+				yVal=0.3;
+				flag++;
+			}
+			else
+			{
+				flag=0;
+			}
+			
+			dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++;
+	}
+	else
+	{
+		yVal=0;
+		dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++
+	}
+
+	if (dps.length > dataLength) {
+		dps.shift();
+	}
+
+	chart.render();
+};
+
+updateChart(dataLength);
+setInterval(function(){updateChart()}, updateInterval);
+
+}
+</script>
+<div class="Bala">
+<div id="chartContainer" style="height: 370px; width:60%;"></div>
+<script src="vendors/js/canvasjs.min.js"> </script>
+    
+      </div>
+       <div class="Data">
+        <h1>  Total Voided Volume :</h1>
+           <script> summateupdate() </script> <br><br>
+        <h2>  Total time taken    :</h2>
+      </div>
+      <div class="Butto">
+                <a class="btn btn-full" href="#">Patient Information</a><br><br> <br> <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="btn btn-half" href="#">Predict</a><br><br>
+      </div>
+</header>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/CSS/targetstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet" type="text/css">
+        <title>Graph</title>
+
+
+    <body>
+        <header>
+            <div class="hotbox">
+                <h1> Live Graph </h1>
+              
+            </div>
+      <script>
+window.onload = function () {
+
+var dps = []; // dataPoints
+var chart = new CanvasJS.Chart("chartContainer", {
+	title :{
+		text: "Dynamic Data"
+	},
+	axisY: {
+		includeZero: false
+	},      
+	data: [{
+		type: "line",
+		dataPoints: dps
+	}]
+});
+
+var count=0;
+var xVal = 0;
+var yVal = 100; 
+var updateInterval = 1000;
+var dataLength = 20; // number of dataPoints visible at any point
+
+var updateChart = function () {
+
+	//Fetch yVal from HTTP Web Server//
+	if(count<1){
+	 if(yVal>1)
+	{
+			dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++;
+	}
+	else
+	{
+		yVal=0;
+		dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++
+	}	
+	}
+	else if(flag<11)
+	{
+			if(yVal<0.5)
+			{
+				yVal=0;
+				flag++;
+			}
+			else
+			{
+				flag=0;
+			}
+			
+			dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++;
+	}
+	else
+	{
+		yVal=0;
+		dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++
+	}
+
+	if (dps.length > dataLength) {
+		dps.shift();
+	}
+
+	chart.render();
+};
+
+updateChart(dataLength);
+setInterval(function(){updateChart()}, updateInterval);
+
+}
+</script>
+            <script>
+window.onload = function () {
+
+var dps = []; // dataPoints
+var chart = new CanvasJS.Chart("chartContainer", {
+	title :{
+		text: "Dynamic Data"
+	},
+	axisY: {
+		includeZero: false
+	},      
+	data: [{
+		type: "line",
+		dataPoints: dps
+	}]
+});
+
+var count=0;
+var xVal = 0;
+var yVal = 100; 
+var updateInterval = 1000;
+var dataLength = 20; // number of dataPoints visible at any point
+
+var updateChart = function () {
+
+	//Fetch yVal from HTTP Web Server//
+	if(count<1){
+	 if(yVal>1)
+	{
+			dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++;
+	}
+	else
+	{
+		yVal=0;
+		dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++
+	}	
+	}
+	else if(flag<11)
+	{
+			if(yVal<0.5)
+			{
+				yVal=0;
+				flag++;
+			}
+			else
+			{
+				flag=0;
+			}
+			
+			dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++;
+	}
+	else
+	{
+		yVal=0;
+		dps.push({
+			x: xVal,
+			y: yVal
+		});
+		xVal++
+	}
+
+	if (dps.length > dataLength) {
+		dps.shift();
+	}
+
+	chart.render();
+};
+
+updateChart(dataLength);
+setInterval(function(){updateChart()}, updateInterval);
+
+}
+</script>
+            </head>
+</header>
+<body>
+<div id="chartContainer" style="height: 370px; width:100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<body>
+<div id="chartContainer" style="height: 370px; width:100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    </body>
+</html>
